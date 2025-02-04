@@ -31,11 +31,11 @@ function realizarSuma() {
     let resultado;
 
     //La funcion parseInt convierte un dato string a un entero
-
+    //La funcióm parsefloat convierte un dato string a un flotante (con decimales)
     resultado = parseInt(numero1) + parseInt(numero2);
 
     console.log(suma)
-//innertext es para mostrar el resultado en la pagina web
+    //innertext es para mostrar el resultado en la pagina web
     document.getElementById("resultado").innerHTML = resultado;
 
 }
