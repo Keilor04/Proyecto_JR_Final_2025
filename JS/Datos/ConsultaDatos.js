@@ -4,21 +4,21 @@
 //lo -- crea objeto
 //kv -- crea key : value 
 
-
+//Se crea el menú de navegación de la página web con la variable Datos_LiNav    
 export let Datos_LiNav = [
 
     {
         Id: 1,
-        Nombre: "Inicio", 
-        Detalle: "Proyecto",   
-        Url: "Inicio.html",
-        Activo: true
+        Nombre: "Inicio", //Nombre que ve el usuario
+        Detalle: "Proyecto", //Práctica o si es del proyecto 
+        Url: "Inicio.html",  //Ruta de la página 
+        Activo: true     //Para visualizar (true) o ocultar (false) del menú de la página web
     },
     {   Id: 2,
         Nombre: "Calculadora",
         Detalle: "Practica",      
         Url: "/Practica_Calculadora.html",
-        Activo: true
+        Activo: true  
     },
     {   Id: 3,
         Nombre: "Listado Clientes", 
@@ -30,7 +30,7 @@ export let Datos_LiNav = [
         Nombre: "Tarea Pokemon",   
         Detalle: "Practica",  
         Url: "/Practica_TareaPokemon.html",
-        Activo: true
+        Activo: false
     },
     {   Id: 5,
         Nombre: "Tarea Netflix",    
@@ -66,13 +66,13 @@ export let Datos_LiNav = [
         Nombre: "Practica IF",    
         Detalle: "Practica ", 
         Url: "/Practica_IF.html",
-        Activo: true
+        Activo: false
     },
     {   Id: 12,
         Nombre: "Practica CICLO",    
         Detalle: "Practica ", 
         Url: "/Practica_CICLO.html",
-        Activo: true
+        Activo: false
     },
 ];
 
