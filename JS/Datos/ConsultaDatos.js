@@ -72,7 +72,7 @@ export let Datos_LiNav = [
         Nombre: "Practica CICLO",    
         Detalle: "Practica ", 
         Url: "/Practica_CICLO.html",
-        Activo: false
+        Activo: true //se pone en true para clase del 05-02-2025
     },
 ];
 
