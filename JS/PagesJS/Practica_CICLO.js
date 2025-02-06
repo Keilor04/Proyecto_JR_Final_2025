@@ -24,7 +24,7 @@ personas.forEach(element => {
     console.log(element);
 });
 
- 
+
 
 let clientes = [
     { nombre: "Juan", edad: 25, activo: true },
@@ -45,20 +45,20 @@ clientes.forEach(element => {
 });
 
 clientes.forEach(element => {
- //Si la condición es verdadera se muestra el nombre y activo del objeto
-// Se usa doble = es una comparación 
-// Se usa triple = es una comparación estricta 
-// Ejemplos: 1 === "1" o 1 ==1 o 1 = 1
+    //Si la condición es verdadera se muestra el nombre y activo del objeto
+    // Se usa doble = es una comparación 
+    // Se usa triple = es una comparación estricta 
+    // Ejemplos: 1 === "1" o 1 ==1 o 1 = 1
 
- if (element.activo == true) {
-    console.log(element.nombre, element.activo);
-}
+    if (element.activo == true) {
+        console.log(element.nombre, element.activo);
+    }
 
 });
 
 //length es una propiedad que se usa para saber la cantidad de objetos en un array
 //Se agrega length con punto luego del nombre del array:
-console.log (personas.length)
+console.log(personas.length)
 
 
 let buscarnombre
@@ -81,8 +81,8 @@ console.log(buscaractivo)
 
 function filtrar() {
 
-let valor 
-valor = document.getElementById(`Sensitivo`).value;
+    let valor
+    valor = document.getElementById(`Sensitivo`).value;
     console.log(valor)
 }
 
@@ -92,24 +92,44 @@ valor = document.getElementById(`Sensitivo`).value;
 
 
 function buscarDesdeInput() {
-//Se crea la variable Input1 
-let Input1
-let resultado
-let busqueda
+    //Se crea la variable Input1 
+    let Input1
+    let resultado
+    let busqueda
 
-Input1 = document.getElementById(`buscarNombre`).value;
-resultado = document.getElementById(`resultadoBusqueda`)
+    Input1 = document.getElementById(`buscarNombre`).value;
+    resultado = document.getElementById(`resultadoBusqueda`)
 
-//Para que se busque en el array el dato que el usuario ingreso en el input del html 
-//trim() es para remover los espacios en blanco al inicio y al final de la cadena de texto
-//toUpperCase() es para convertir el texto en mayúsculas
+    //Para que se busque en el array el dato que el usuario ingreso en el input del html 
+    //trim() es para remover los espacios en blanco al inicio y al final de la cadena de texto
+    //toUpperCase() es para convertir el texto en mayúsculas
 
-busqueda = personas.find(x => x.nombre.toUpperCase().trim() === Input1.toUpperCase().trim())
+    busqueda = personas.find(x => x.nombre.toUpperCase().trim() === Input1.toUpperCase().trim())
 
-//Si la condición es verdadera (que existe) se muestra el nombre del objeto en el array
-if (busqueda) {
-    resultado.innerHTML = `Nombre: ${busqueda.nombre}`
+    //Si la condición es verdadera (que existe) se muestra el nombre del objeto en el array
+    if (busqueda) {
+        resultado.innerHTML = `Nombre: ${busqueda.nombre}`
+    }
+    else {  //Si la condición es falsa se muestra el siguiente mensaje 
+        resultado.innerHTML = `No se encontró el nombre`
+    }
+
 }
-else {  //Si la condición es falsa se muestra el siguiente mensaje 
-    resultado.innerHTML = `No se encontró el nombre`
+
+//Ejercicio 02 
+
+function primeraPersonaActiva() {
+    let resultado
+    let busqueda
+
+    resultado = document.getElementById(`resultadoActivo`)
+    busqueda = personas.find(x => x.activo === true)
+
+if (busqueda) {
+    resultado.innerHTML = `Nombre de la primera persona activa: ${busqueda.nombre}`
+} else {
+    resultado.innerHTML = `No se encontró el nombre de la persona activa`
+}
+
+
 }
