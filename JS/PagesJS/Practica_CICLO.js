@@ -55,3 +55,33 @@ clientes.forEach(element => {
 }
 
 });
+
+//length es una propiedad que se usa para saber la cantidad de objetos en un array
+//Se agrega length con punto luego del nombre del array:
+console.log (personas.length)
+
+
+let buscarnombre
+
+//Se crea la variable x 
+//find es para filtrar por una propiedad de un objeto del array
+buscarnombre = personas.find(x => x.nombre === "Ana")
+
+console.log(buscarnombre)
+
+let buscaractivo
+
+//Se crea la variable x 
+buscaractivo = personas.find(x => x.activo === "true")
+
+console.log(buscaractivo)
+
+
+//Se crea la funtion filtrar para el input del html 
+
+function filtrar() {
+    
+let valor 
+valor = document.getElementById(`Sensitivo`).value;
+    console.log(valor)
+}

@@ -29,8 +29,8 @@
 
     <!-- Inicio: Navbar  100% -->
     <nav class="navbar navbar-expand-sm navbar-light bg-light" id="IdNav"> </nav>
-    <!-- Fin: Navbar  -->   
-    
+    <!-- Fin: Navbar  -->
+
 
 
     <!-- Inicio: Container 90% -->
@@ -44,9 +44,13 @@
 
         <!-- Inicio: Main  -->
         <main class="mt-5">
-            
+
             <div class="container d-flex flex-column align-items-center">
-            
+
+                <!-- Se agrega un input del tipo texto -->
+                 <!-- onkeyup va a ir buscar en la base de datos la información en tiempo real -->
+                <input type="text" onkeyup="filtrar()" id="Sensitivo">
+
                 <!-- Ejercicio 1 -->
                 <section class="card p-3 mb-3">
                     <h3>1️⃣ Buscar Persona por Nombre</h3>
@@ -55,7 +59,7 @@
                     <button class="btn btn-primary" onclick="buscarDesdeInput()">Buscar</button>
                     <h5 class="mt-3" id="resultadoBusqueda"></h5>
                 </section>
-    
+
                 <!-- Ejercicio 2 -->
                 <section class="card p-3 mb-3">
                     <h3>2️⃣ Buscar Primera Persona Activa</h3>
@@ -63,7 +67,7 @@
                     <button class="btn btn-primary" onclick="primeraPersonaActiva()">Buscar Activo</button>
                     <h5 class="mt-3" id="resultadoActivo"></h5>
                 </section>
-    
+
                 <!-- Ejercicio 3 -->
                 <section class="card p-3 mb-3">
                     <h3>3️⃣ Buscar Primera Persona Mayor de Edad</h3>
@@ -71,7 +75,7 @@
                     <button class="btn btn-primary" onclick="primeraMayorDeEdad()">Buscar Mayor</button>
                     <h5 class="mt-3" id="resultadoMayor"></h5>
                 </section>
-    
+
                 <!-- Ejercicio 4 -->
                 <section class="card p-3 mb-3">
                     <h3>4️⃣ Mostrar Todas las Personas</h3>
@@ -79,7 +83,7 @@
                     <button class="btn btn-success" onclick="mostrarTodasLasPersonas()">Mostrar Personas</button>
                     <ul class="list-group mt-3" id="listaPersonas"></ul>
                 </section>
-    
+
                 <!-- Ejercicio 5 -->
                 <section class="card p-3 mb-3">
                     <h3>5️⃣ Mostrar Personas Mayores de Edad</h3>
@@ -87,7 +91,7 @@
                     <button class="btn btn-warning" onclick="mayoresDeEdad()">Mostrar Mayores</button>
                     <ul class="list-group mt-3" id="listaMayores"></ul>
                 </section>
-    
+
                 <!-- Ejercicio 6 -->
                 <section class="card p-3 mb-3">
                     <h3>6️⃣ Mostrar Personas Activas</h3>
@@ -95,7 +99,7 @@
                     <button class="btn btn-info" onclick="personasActivas()">Mostrar Activos</button>
                     <ul class="list-group mt-3" id="listaActivos"></ul>
                 </section>
-    
+
             </div>
 
         </main>
@@ -104,7 +108,7 @@
     <!-- Fin: Container  -->
 
     <!-- Inicio: Footer  100% -->
-    <footer id="IdFooter" class="text-center mt-5">  </footer>
+    <footer id="IdFooter" class="text-center mt-5"> </footer>
     <!-- Fin: Footer  -->
 
 
@@ -116,9 +120,9 @@
     <script type="module" src="JS/General/Nav.js"></script>
     <script type="module" src="JS/General/Footer.js"></script>
     <script type="module" src="JS/General/Header.js"></script>
-   
-   <!-- Scripts de la Pagina   -->
-    <script defer  src="JS/PagesJS/Practica_CICLO.js"></script>
+
+    <!-- Scripts de la Pagina   -->
+    <script defer src="JS/PagesJS/Practica_CICLO.js"></script>
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
