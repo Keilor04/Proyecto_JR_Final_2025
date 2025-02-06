@@ -131,5 +131,23 @@ if (busqueda) {
     resultado.innerHTML = `No se encontró el nombre de la persona activa`
 }
 
+}
 
+//Ejercicio 06
+
+//Es el caso que más se utiliza en los trabajos actualmente 
+
+function personasActivas() {
+
+    let resultado
+    let busqueda
+
+    resultado = document.getElementById(`listaActivos`);
+
+    personas.forEach(element=> {
+        if (element.activo === true) {
+            // el += es para agregar un nuevo elemento a la lista sin borrar el anterior
+            resultado.innerHTML += `<li>${element.nombre}</li>`
+        }
+    });
 }
