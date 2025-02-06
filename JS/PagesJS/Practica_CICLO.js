@@ -80,8 +80,36 @@ console.log(buscaractivo)
 //Se crea la funtion filtrar para el input del html 
 
 function filtrar() {
-    
+
 let valor 
 valor = document.getElementById(`Sensitivo`).value;
     console.log(valor)
+}
+
+//Ejercicios de la página html 
+
+//Ejercicio 1
+
+
+function buscarDesdeInput() {
+//Se crea la variable Input1 
+let Input1
+let resultado
+let busqueda
+
+Input1 = document.getElementById(`buscarNombre`).value;
+resultado = document.getElementById(`resultadoBusqueda`)
+
+//Para que se busque en el array el dato que el usuario ingreso en el input del html 
+//trim() es para remover los espacios en blanco al inicio y al final de la cadena de texto
+//toUpperCase() es para convertir el texto en mayúsculas
+
+busqueda = personas.find(x => x.nombre.toUpperCase().trim() === Input1.toUpperCase().trim())
+
+//Si la condición es verdadera (que existe) se muestra el nombre del objeto en el array
+if (busqueda) {
+    resultado.innerHTML = `Nombre: ${busqueda.nombre}`
+}
+else {  //Si la condición es falsa se muestra el siguiente mensaje 
+    resultado.innerHTML = `No se encontró el nombre`
 }
