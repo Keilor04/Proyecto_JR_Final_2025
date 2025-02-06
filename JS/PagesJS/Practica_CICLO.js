@@ -147,7 +147,9 @@ function personasActivas() {
     personas.forEach(element=> {
         if (element.activo === true) {
             // el += es para agregar un nuevo elemento a la lista sin borrar el anterior
+            
             resultado.innerHTML += `<li>${element.nombre}</li>`
         }
     });
-}
+} 
+ 
