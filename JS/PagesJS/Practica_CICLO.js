@@ -125,13 +125,64 @@ function primeraPersonaActiva() {
     resultado = document.getElementById(`resultadoActivo`)
     busqueda = personas.find(x => x.activo === true)
 
-if (busqueda) {
-    resultado.innerHTML = `Nombre de la primera persona activa: ${busqueda.nombre}`
-} else {
-    resultado.innerHTML = `No se encontró el nombre de la persona activa`
-}
+    if (busqueda) {
+        resultado.innerHTML = `Nombre de la primera persona activa: ${busqueda.nombre}`
+    } else {
+        resultado.innerHTML = `No se encontró el nombre de la persona activa`
+    }
 
 }
+
+//Ejercicio 03 
+
+function primeraMayorDeEdad() {
+    let resultado
+    let busqueda
+
+    resultado = document.getElementById(`resultadoMayor`)
+    busqueda = personas.find(x => x.edad >= 18)
+
+    if (busqueda) {
+        resultado.innerHTML = `Nombre de la primera persona mayor de edad: ${busqueda.nombre}`
+    } else {
+        resultado.innerHTML = `No se encontró el nombre de la primera persona mayor de edad`
+    }
+
+}
+
+//Ejercicio 04
+
+
+function mostrarTodasLasPersonas() {
+    let resultado
+
+    resultado = document.getElementById(`listaPersonas`);
+
+    personas.forEach(element => {
+        if (element) {
+            resultado.innerHTML += `<li>${element.nombre}</li>`
+        }
+    });
+}
+
+//Ejercicio 05
+
+
+function mayoresDeEdad() {
+
+    let resultado
+    let busqueda
+
+    resultado = document.getElementById(`listaMayores`);
+    busqueda = personas.find(x => x.edad >= 18)
+
+        if (busqueda) {
+            resultado.innerHTML = `Personas que tienen 18 años o más: ${busqueda.nombre}`
+        } else {
+            resultado.innerHTML = `No se encontraron personas que tienen 18 años o más`
+        }
+    }
+
 
 //Ejercicio 06
 
@@ -144,12 +195,11 @@ function personasActivas() {
 
     resultado = document.getElementById(`listaActivos`);
 
-    personas.forEach(element=> {
+    personas.forEach(element => {
         if (element.activo === true) {
             // el += es para agregar un nuevo elemento a la lista sin borrar el anterior
-            
-            resultado.innerHTML += `<li>${element.nombre}</li>`
+
+            resultado.innerHTML += `${element.nombre}`
         }
     });
-} 
- 
+}

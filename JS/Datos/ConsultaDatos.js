@@ -18,7 +18,7 @@ export let Datos_LiNav = [
         Nombre: "Calculadora",
         Detalle: "Practica",      
         Url: "/Practica_Calculadora.html",
-        Activo: true  
+        Activo: false 
     },
     {   Id: 3,
         Nombre: "Listado Clientes", 
@@ -48,7 +48,7 @@ export let Datos_LiNav = [
         Nombre: "API_Listado_Cliente",    
         Detalle: "Proyecto", 
         Url: "/API_Listado_Clientes.html",
-        Activo: false
+        Activo: false //se pone en false para clase del 10-02-2025
     },
     {   Id: 9,
         Nombre: "API_VerUsuario",    
@@ -72,7 +72,7 @@ export let Datos_LiNav = [
         Nombre: "Practica CICLO",    
         Detalle: "Practica ", 
         Url: "/Practica_CICLO.html",
-        Activo: true //se pone en true para clase del 05-02-2025
+        Activo: false //se pone en true para clase del 05-02-2025 y el 10-02-2025 se pone en false
     },
 ];
 
