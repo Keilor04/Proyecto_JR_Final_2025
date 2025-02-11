@@ -1,4 +1,26 @@
 console.log(`Funcionando Archivo:  Practica_Listado_Clientes`);
+
+// Datos locales simulando la API
+let Datos_Locales = [
+    { id: 1, name: "Juan Pérez", email: "juan.perez@example.com" },
+    { id: 2, name: "María Gómez", email: "maria.gomez@example.com" },
+    { id: 3, name: "Carlos Rodríguez", email: "carlos.rodriguez@example.com" },
+    { id: 4, name: "Ana Fernández", email: "ana.fernandez@example.com" }
+];
+
+//Se define la variable a fuera de la función para que sea global y se pueda reutilizar en varias funciones
+let contenedor 
+
+contenedor = document.getElementById("tbody");
+
+function Mostrar_CampoTabla() {
+    
+let html 
+
+html = "";
+
+}
+
 function exportToExcel() {
 
     try {
@@ -12,7 +34,7 @@ function exportToExcel() {
        
     }
 
-    function exportToPDF() {
+function exportToPDF() {
         try {
             // Cargar jsPDF desde window
             let { jsPDF } = window.jspdf;
