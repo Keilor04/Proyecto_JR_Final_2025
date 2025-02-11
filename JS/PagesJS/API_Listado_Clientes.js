@@ -175,3 +175,67 @@ function Mostrar_CampoTabla2() {
     contenedor2.innerHTML = html;
 
 }
+
+//API 3 - Práctica 
+//Paso 01: Se define una constante llamada API3 con el enlace URL del API
+
+const Api3 = "https://zelda.fanapis.com/api/games"
+
+//Paso 02: Se crea un array llamado DatosFIltrados3 para almacenar los datos filtrados
+ 
+let DatosFiltrados3
+
+DatosFiltrados3 = [];
+
+//Se define la variable contenedor3
+
+let contenedor3
+
+contenedor3 = document.getElementById("tbody3");
+
+//Paso 03: Se usa addEventListener para que se ejecute la función cuando el documento esté cargado
+
+document.addEventListener("DOMContentLoaded", function () {
+    consultarDatos3() //Cuando trabajamos con API se debe llamar a la función consultarDatos3
+});
+
+//Paso 04: Esta función se crea una sola vez para un API
+
+function consultarDatos3() {
+
+    fetch(Api3)
+        .then(response => response.json())
+        .then(result => {
+            // custom error
+            console.log(result.data);    
+            DatosFiltrados3 = result.data;
+            Mostrar_CampoTabla3()
+        })
+        .catch(error => {
+            // common error
+            return null;
+        });
+    
+}
+
+//Paso 05: Se crea la función Mostar_CampoTabla3 para que se muestren los datos en la página web
+
+function Mostrar_CampoTabla3() {
+    
+    let html
+
+    html = "";
+
+    DatosFiltrados3.forEach(element => {
+        console.log(element);
+
+        html += `<tr>
+        <td>${element.name}</td>
+        <td>${element.description}</td>
+        <td>${element.developer}</td>      
+        <td>${element.released_date}</td>      
+                </tr>`
+    });
+
+    contenedor3.innerHTML = html;
+}
