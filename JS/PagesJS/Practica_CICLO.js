@@ -174,7 +174,7 @@ function mayoresDeEdad() {
     let busqueda
 
     resultado = document.getElementById(`listaMayores`);
-    busqueda = personas.find(x => x.edad >= 18)
+    busqueda = personas.filter(x => x.edad >= 18)
 
         if (busqueda) {
             resultado.innerHTML = `Personas que tienen 18 años o más: ${busqueda.nombre}`
