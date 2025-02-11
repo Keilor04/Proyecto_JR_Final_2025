@@ -175,9 +175,9 @@ function mayoresDeEdad() {
 
     resultado = document.getElementById(`listaMayores`);
     
-    personas.forEach(element => {
-            resultado.innerHTML = `Personas que tienen 18 años o más: ${element.nombre}`
-    });
+personas.forEach(element => element.edad >= 18) {
+            resultado.innerHTML +=`${element.nombre}`
+    };
     }
 
 

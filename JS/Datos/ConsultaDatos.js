@@ -30,7 +30,7 @@ export let Datos_LiNav = [
         Nombre: "Tarea Pokemon",   
         Detalle: "Practica",  
         Url: "/Practica_TareaPokemon.html",
-        Activo: true //se pone en true para clase del 05-02-2025
+        Activo: false//se pone en true para clase del 05-02-2025, se pone en false para clase del 10-02-2025
     },
     {   Id: 5,
         Nombre: "Tarea Netflix",    
