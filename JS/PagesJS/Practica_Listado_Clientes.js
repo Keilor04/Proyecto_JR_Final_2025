@@ -9,16 +9,43 @@ let Datos_Locales = [
 ];
 
 //Se define la variable a fuera de la función para que sea global y se pueda reutilizar en varias funciones
-let contenedor 
+
+
+//Se crea un array para almacenar los datos filtrados
+let DatosFiltrados = [];
+
+let contenedor
 
 contenedor = document.getElementById("tbody");
 
+//Se iguala la variable DatosFiltrados a Datos_Locales para que se muestren todos los datos
+DatosFiltrados = Datos_Locales;
+
+
+//Se inicializa la variable 
+//Se usa addEventListener para que se ejecute la función cuando el documento esté cargado
+document.addEventListener("DOMContentLoaded", function () {
+Mostrar_CampoTabla()
+});
+
 function Mostrar_CampoTabla() {
-    
-let html 
 
-html = "";
+    let html
 
+    html = "";
+
+    DatosFiltrados.forEach(element => {
+        console.log(element);
+
+        //Se agrega += para que se muestren todos los elementos del array (Datos_Locales
+        html += `<tr>
+        <td>${element.id}</td>
+        <td>${element.name}</td>
+        <td>${element.email}</td>      
+                </tr>`
+    });
+
+    contenedor.innerHTML = html;
 }
 
 function exportToExcel() {
@@ -31,36 +58,36 @@ function exportToExcel() {
         alert("Error al exportar a Excel: " + error.message);
 
     }
-       
-    }
+
+}
 
 function exportToPDF() {
-        try {
-            // Cargar jsPDF desde window
-            let { jsPDF } = window.jspdf;
-            let doc = new jsPDF();
-    
-            // Cargar el plugin autoTable manualmente
-            if (typeof doc.autoTable !== "function") {
-                alert("jsPDF-AutoTable no está cargado correctamente.");
-                return;
-            }
-    
-            // Obtener la tabla
-            let table = document.getElementById("ttabla"); // Asegúrate de que el ID sea correcto
-            
-            if (!table) {
-                alert("No se encontró la tabla.");
-                return;
-            }
-    
-            // Convertir la tabla a PDF
-            doc.autoTable({ html: table });
-    
-            // Guardar el PDF
-            doc.save("empleados.pdf");
-    
-        } catch (error) {
-            alert("Error al exportar a PDF: " + error.message);
+    try {
+        // Cargar jsPDF desde window
+        let { jsPDF } = window.jspdf;
+        let doc = new jsPDF();
+
+        // Cargar el plugin autoTable manualmente
+        if (typeof doc.autoTable !== "function") {
+            alert("jsPDF-AutoTable no está cargado correctamente.");
+            return;
         }
+
+        // Obtener la tabla
+        let table = document.getElementById("ttabla"); // Asegúrate de que el ID sea correcto
+
+        if (!table) {
+            alert("No se encontró la tabla.");
+            return;
+        }
+
+        // Convertir la tabla a PDF
+        doc.autoTable({ html: table });
+
+        // Guardar el PDF
+        doc.save("empleados.pdf");
+
+    } catch (error) {
+        alert("Error al exportar a PDF: " + error.message);
     }
+}

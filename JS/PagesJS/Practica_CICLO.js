@@ -174,13 +174,10 @@ function mayoresDeEdad() {
     let busqueda
 
     resultado = document.getElementById(`listaMayores`);
-    busqueda = personas.filter(x => x.edad >= 18)
-
-        if (busqueda) {
-            resultado.innerHTML = `Personas que tienen 18 años o más: ${busqueda.nombre}`
-        } else {
-            resultado.innerHTML = `No se encontraron personas que tienen 18 años o más`
-        }
+    
+    personas.forEach(element => {
+            resultado.innerHTML = `Personas que tienen 18 años o más: ${element.nombre}`
+    });
     }
 
 
