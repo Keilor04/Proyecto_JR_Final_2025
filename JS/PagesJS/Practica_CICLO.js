@@ -167,18 +167,25 @@ function mostrarTodasLasPersonas() {
 
 //Ejercicio 05
 
-
 function mayoresDeEdad() {
 
     let resultado
     let busqueda
 
     resultado = document.getElementById(`listaMayores`);
+
+    //Se agrega.innerHTML para que se muestre en el html antes de la lista de personas mayores de edad
+    resultado.innerHTML = `Las personas mayores de edad son:`
     
-personas.forEach(element => element.edad >= 18) {
-            resultado.innerHTML +=`${element.nombre}`
-    };
-    }
+    //En el array personas se busca a las personas que sean mayores de 18 años
+    personas.forEach(element => {
+        if (element.edad >= 18) {
+
+            resultado.innerHTML += `<ol>${element.nombre}</ol>`;
+        }
+    });
+
+}
 
 
 //Ejercicio 06
