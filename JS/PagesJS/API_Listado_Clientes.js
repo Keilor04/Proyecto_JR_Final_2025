@@ -25,9 +25,31 @@ DatosFiltrados = Datos_Locales;
 //Se usa addEventListener para que se ejecute la función cuando el documento esté cargado
 document.addEventListener("DOMContentLoaded", function () {
 consultarDatos()
+consultarAPIClientes()
+
 });
 
 function consultarDatos() {
+
+    //Se ejecuta la función fetch.get para obtener los datos de la API
+    //Se agrega la función API_Usuarios para obtener los datos de la API
+    fetch(Api_Usuarios)
+        .then(response => response.json())
+        .then(result => {
+            // custom error
+            //Se agrega un console.log para mostrar los datos en la consola
+            console.log(result);
+        })
+        .catch(error => {
+            // common error
+            return null;
+        });
+}
+
+//consultarAPIClientes 
+//Puntos Extras 8:25 pm 10-02-2025
+
+function consultarAPIClientes() {
 
     //Se ejecuta la función fetch.get para obtener los datos de la API
     //Se agrega la función API_Usuarios para obtener los datos de la API
