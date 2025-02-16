@@ -48,7 +48,7 @@ footer{
     text-overflow: ellipsis;
 }
 
-#Testimonios {
+#Nosotros {
     background-color:#69bdbd;
     color: rgb(0, 0, 0);
     border-radius: 10px;
@@ -58,4 +58,34 @@ footer{
     background-color: rgb(5, 51, 59);
     color: white;
     border-radius: 10px;
+}
+
+#Nosotros {
+    background-color: rgb(5, 51, 59);
+    color: white;
+    border-radius: 10px;
+}
+
+#Proyectos {
+    background-color: rgb(7, 73, 85);
+    color: white;
+    border-radius: 10px;
+}
+
+#Proyectos img {
+    padding: 10px;
+    width: 75%;
+    border-radius: 5px solid black;
+}
+
+#Proyectos2 {
+    background-color: rgb(7, 73, 85);
+    color: white;
+    border-radius: 10px;
+}
+
+#Proyectos2 img {
+    padding: 10px;
+    width: 75%;
+    border-radius: 5px solid black;
 }

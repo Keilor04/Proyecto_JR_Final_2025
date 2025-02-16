@@ -4,18 +4,19 @@ console.log(`Funcionando Archivo: Inicio`);
 
 document.addEventListener('DOMContentLoaded', (e) => {
 
-    Mostrar_Testimonios()
+    Mostrar_Nosotros()
     Mostrar_Articulos()
+    Mostrar_Proyectos()
 
 });
 
 
 
 
-function Mostrar_Testimonios() {
-    let Contenedor_IdFooter = document.getElementById('Testimonios'); //gi ls
+function Mostrar_Nosotros() {
+    let Contenedor_IdNosotros = document.getElementById('Nosotros'); //gi ls
 
-    Contenedor_IdFooter.innerHTML
+    Contenedor_IdNosotros.innerHTML
         = `
         <div class="container">
                 <div class="row">
@@ -36,7 +37,7 @@ function Mostrar_Testimonios() {
                                 un equipo altamente capacitado, nos aseguramos de cumplir con los más altos estándares,
                                 garantizando resultados eficientes y satisfactorios para nuestros clientes.
                             </p>
-                            <a class="btn btn-link btn-lg mt-2 d-flex justify-content-center" href="Jumbo action link" role="button">Más información</a>
+                            <a class="btn btn-link btn-lg mt-2 d-flex justify-content-center" href="/Nosotros.html" role="button">Más información</a>
 
 
                         </div>
@@ -50,9 +51,9 @@ function Mostrar_Testimonios() {
 }
 
 function Mostrar_Articulos() {
-    let Contenedor_IdFooter = document.getElementById('Articulos'); //gi ls
+    let Contenedor_IdArticulos = document.getElementById('Articulos'); //gi ls
 
-    Contenedor_IdFooter.innerHTML
+    Contenedor_IdArticulos.innerHTML
         = `
         <h1 class ="text-center">Servicios</h1>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -90,6 +91,39 @@ function Mostrar_Articulos() {
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+</div>
+`;
+
+}
+
+
+function Mostrar_Proyectos() {
+  let Contenedor_IdProyectos = document.getElementById('Proyectos'); //gi ls
+
+  Contenedor_IdProyectos.innerHTML
+      = `
+      <h1 class ="text-center">Proyectos</h1>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<div class="carousel-inner text-center content-center">
+  <div class="carousel-item active">
+    <img class="w-50" src="/Assets/Img_residencial.png" alt="First slide">
+     <h3>Proyecto residencial Sunset Village</h3>
+     <a href="Proyectos.html">Más información<i class="fas fa-angle-double-right"></i></a>
+  </div>
+  <div class="carousel-item">
+    <img class="w-50" src="/Assets/Img_condominio.png" alt="Second slide">
+    <h3>Condominio horizontal vertical Los Maderos</h3>
+     <a href="Proyectos.html">Más información <i class="fas fa-angle-double-right"></i></a>
+  </div>
+</div>
+<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="sr-only">Next</span>
+</a>
 </div>
 `;
 

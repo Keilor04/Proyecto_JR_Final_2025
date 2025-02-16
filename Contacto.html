@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Contacto</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
+
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+
+    <!-- SCROOLL REVEAL JS LIBRARY CDN -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="shortcut icon" href="Assets/Logo empresa.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Inicio: Navbar  100% -->
+    <nav class="navbar navbar-expand-sm" id="IdNav"> </nav>
+    <!-- Fin: Navbar  -->
+
+
+
+    <!-- Inicio: Container 90% -->
+    <div class="container">
+
+
+        <!-- Inicio: Header  -->
+        <header id="Header" class="mb-5 mt-5"></header>
+        <!-- Fin: Header  -->
+
+
+        <!-- Inicio: Main  -->
+        <main class="mt-5">
+            <div class="container justify-content-center align-items-center m-3">
+                <div>
+                    <form action="">
+                        <!-- el atributo action que vacio, dentro de esta parte se coloca la información del formulario a llenar-->
+                        <!-- Se involucra dos etiquetas para instrucción se hace con la etiqueta label para ingresar el nombre del formulario-->
+                        <hr>
+                        <h3>Datos personales</h3>
+                        <label for="">Nombre</label>
+                        <!-- Para colocar la información es con la etiqueta input del tipo texto -->
+                        <input type="text" class="form-control" id="Nombre" placeholder="Digite su nombre ">
+                        <br>
+                        <label for="">Primer Apellido</label>
+                        <!-- Para colocar la información es con la etiqueta input del tipo texto -->
+                        <input type="text" class="form-control" id="Primer Apellido"
+                            placeholder="Digite su primer apellido">
+                        <br>
+                        <label for="">Segundo Apellido</label>
+                        <!-- Para colocar la información es con la etiqueta input del tipo texto -->
+                        <input type="text" class="form-control" id="Segundo Apellido"
+                            placeholder="Digite su segundo apellido">
+                        <br>
+                        <label for="">Ingrese su fecha de nacimiento</label>
+                        <input type="date" class="form-control" id="Fecha">
+                        <!-- La etiqueta date es para agregar calendario -->
+                        <br>
+                        <label for="">Ingrese su edad</label>
+                        <input type="number" class="form-control" id="Edad" placeholder="Digite su edad">
+                        <br>
+                        <button type="button" class="btn btn-primary" onclick="Confirmardatos()">Confirmar
+                            registro</button>
+                        <button type="reset" class="btn btn-primary">Refrescar los campos</button>
+                        <h3 id="datos"></h3>
+                        <hr>
+                    </form>
+                </div>
+                <div>
+                    <h3>Datos de usuario</h3>
+                    <label for="">Ingrese su Email</label>
+                    <input type="email" class="form-control" id="Email" placeholder="Digite su Email" valid>
+                    <br>
+                    <label for="">Ingrese su contraseña</label>
+                    <input type="password" class="form-control" id="Contraseña" placeholder="Digite su contraseña">
+                    <br>
+                    <button type="button" class="btn btn-primary" onclick="Confirmardatos2()">Confirmar
+                        registro</button>
+                    <button type="reset" class="btn btn-primary">Refrescar los campos</button>
+                    <h3 id="datos2"></h3>
+                    <hr>
+                </div>
+            </div>
+            <div>
+                <img src="./Assets/Registro.png" class="mt-3 justify-content-center">
+            </div>
+
+
+        </main>
+        <!-- Fin: Main  -->
+    </div>
+    <!-- Fin: Container  -->
+
+    <!-- Inicio: Footer  100% -->
+    <footer id="IdFooter" class="text-center mt-5"> </footer>
+    <!-- Fin: Footer  -->
+
+
+
+
+
+
+    <!-- Scripts General  -->
+    <script type="module" src="JS/General/Nav.js"></script>
+    <script type="module" src="JS/General/Footer.js"></script>
+    <script type="module" src="JS/General/Header.js"></script>
+
+    <!-- Scripts de la Pagina   -->
+    <script defer src="JS/PagesJS/Contacto.js"></script>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

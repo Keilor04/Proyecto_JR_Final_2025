@@ -32,7 +32,7 @@ function Mostrar_Footer() {
                  <!-- Inicio: Contenedor 1 12 columnas  -->
                  <div class="col-md-12 col-sm-12">
                  <h3 class="text-muted text-center">Derechos de Autor</h3> 
-                 <br><a href="/Index.HTML"><img src="/Assets/Logo empresa.png" alt=""></a>
+                 <br><a href="./Inicio.html"><img src="/Assets/Logo empresa.png" alt=""></a>
             </div>
             </div>
                 </div>

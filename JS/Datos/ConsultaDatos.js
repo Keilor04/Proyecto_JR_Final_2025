@@ -40,9 +40,9 @@ export let Datos_LiNav = [
         Activo: false
     },
     {   Id: 7,
-        Nombre: "API_TareaPokemon",    
+        Nombre: "Nosotros",//Nombre anterior: API_TareaPokemon
         Detalle: "Proyecto", 
-        Url: "/API_TareaPokemon.html",
+        Url: "/Nosotros.html", //URL anterior: API_TareaPokemon.html
         Activo: true
     },
     {   Id: 8,
@@ -58,9 +58,9 @@ export let Datos_LiNav = [
         Activo: false
     },
     {   Id: 10,
-        Nombre: "API_Contacto",    
+        Nombre: "Proyectos", //Nombre anterior: API_Contacto   
         Detalle: "Proyecto", 
-        Url: "/API_Contacto.html",
+        Url: "/Proyectos.html", //URL anterior: API_Contacto.html
         Activo: true
     },
     {   Id: 11,
@@ -70,9 +70,9 @@ export let Datos_LiNav = [
         Activo: false
     },
     {   Id: 12,
-        Nombre: "Practica CICLO",    
+        Nombre: "Contacto",   //Nombre anterior: Practica CICLO 
         Detalle: "Practica ", 
-        Url: "/Practica_CICLO.html",
+        Url: "./Contacto.html", //URL anterior: Practica_CICLO
         Activo: true //se pone en true para clase del 05-02-2025 y el 10-02-2025 se pone en false
     },
 ];
