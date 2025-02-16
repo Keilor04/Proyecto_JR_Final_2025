@@ -15,13 +15,13 @@ function Mostrar_Footer() {
     <!-- Inicio: footer-informacion    -->
         <div class="container">
             <div class="row">
-                <!-- Inicio: Contenedor 1 5 columnas  -->
-
+                <!-- Inicio: Contenedor 1  -->
+               <!-- Fin: Contenedor 1 -->
                 <div class="col-md-5 col-sm-6">
-                    <!-- Fin: Contenedor 1 -->
-                    <p class="text-muted"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quos
-                        dolorum possimus facere laborum! Sapiente ad veritatis, laudantium itaque distinctio
-                        necessitatibus vel molestias, omnis incidunt dolore in impedit sint totam?</p>
+                    
+                          <h3  class="text-muted">Socios comerciales</h3>
+                          <img src="/Assets/Img02_footer.png" alt="" class = "w-75">
+              
                 </div>
                 <!-- Fin: footer-mensaje -->
 

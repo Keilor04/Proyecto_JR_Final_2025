@@ -1,6 +1,6 @@
 
 :root{
-  --fondogradiante:linear-gradient(to bottom, #dd2476, #ff512f);  
+  --fondogradiante:linear-gradient(to bottom, #245b8f, #2b8c99);  
   --colorglobal:#dd2476;
   --TextClaro: white;
 
@@ -8,6 +8,13 @@
 
 body{
     font-family: "Titillium Web", sans-serif;
+    background-color: rgb(98, 165, 185);
+}
+
+.Navbar {
+   color: white;
+    background-color: rgb(75, 127, 196);
+    
 }
 
 main{
@@ -37,4 +44,14 @@ footer{
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+#Testimonios {
+    background-color: rgb(198, 218, 231);
+    color: rgb(0, 0, 0);
+}
+
+#Articulos {
+    background-color: rgb(5, 51, 59);
+    color: white;
 }

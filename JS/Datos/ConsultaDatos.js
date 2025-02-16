@@ -4,7 +4,8 @@
 //lo -- crea objeto
 //kv -- crea key : value 
 
-//Se crea el menú de navegación de la página web con la variable Datos_LiNav    
+//Se crea el menú de navegación de la página web con la variable Datos_LiNav 
+//export es para usar el array Datos_LiNav en otro archivo   
 export let Datos_LiNav = [
 
     {
@@ -77,8 +78,8 @@ export let Datos_LiNav = [
 ];
 
 export let urlCompleta = window.location.href; // Obtiene la URL completa
-export let nombrePagina = window.location.pathname.split("/").pop().replace(".html", ""); // Elimina ".html"
-
+export let nombrePagina = window.location.pathname.split("/").pop().replace(".html", ""); //
+// Elimina ".html" 
 
 
 

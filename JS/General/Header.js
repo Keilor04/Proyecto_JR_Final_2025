@@ -1,54 +1,34 @@
 
-import {nombrePagina} from '../Datos/ConsultaDatos.js'
+import { nombrePagina } from '../Datos/ConsultaDatos.js'
 
 
 
 //aela
 document.addEventListener('DOMContentLoaded', (e) => {
-    
+
     Mostrar_Footer()
-    
+
 });
 
 
 
 
 function Mostrar_Footer() {
-    let Contenedor_IdFooter = document.getElementById('Header'); //gi ls
+    let Contenedor_IdHeader = document.getElementById('Header'); //gi ls
+    let Nombreempresa = "Esfera Construcciones";
 
-     Contenedor_IdFooter.innerHTML
-     = `
+    Contenedor_IdHeader.innerHTML
+        = `
 
-  <div class="container">
-                <div class="row">
-                    <!-- Inicio: Contenedor 1  -->
-                    <div class="col-md-6 col-sm-6 ">
-                        <img src="Assets/image1.png" class="w-100" alt="">
-                    </div>
-                    <!-- Fin: Contenedor 1 -->
-
-                    <!-- Inicio: Contenedor 2  -->
-                    <div class="col-md-6 col-sm-6">
-                        <!-- b4-jumbotron-default -->
-                        <div class="">
-                            <h3 class="lead text-center">Página  ${nombrePagina}</h3>
-                            <p class="lead mt-5">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, autem nisi sequi
-                                repellat porro tenetur alias praesentium quasi veritatis quo aliquam, nam consequuntur
-                                perferendis ut nobis quae maxime reprehenderit! Quia.
-                            </p>
-
-
-                            <a class="btn btn-secondary btn-lg mt-2 d-flex justify-content-center" href="Jumbo action link" role="button">Jumbo
-                                action name</a>
-
-
-                        </div>
-                    </div>
-                    <!-- Fin: Contenedor  2-->
-                </div>
-            </div>
-
+   
+   <div class="container">
+        <p class="h2 mb-2">
+        LÍDERES EN CALIDAD DE CONSTRUCCIÓN E INFRAESTRUCTURA
+           <img src="Assets/Datosempresa.png" class="w-100" alt="">  
+        </p>
+        <p class="h4 lead">  Destacamos por la innovación, sostenibilidad y cumplimiento de los más altos estándares globales en
+                    diseño y ejecución de proyectos </p>
+    </div>
+            
 `;
-    
 }
