@@ -12,7 +12,7 @@ export let Datos_LiNav = [
         Id: 1,
         Nombre: "Inicio", //Nombre que ve el usuario
         Detalle: "Proyecto", //Práctica o si es del proyecto 
-        Url: "Inicio.html",  //Ruta de la página 
+        Url: "/Inicio.html",  //Ruta de la página 
         Activo: true     //Para visualizar (true) o ocultar (false) del menú de la página web
     },
     {   Id: 2,
@@ -22,9 +22,9 @@ export let Datos_LiNav = [
         Activo: false 
     },
     {   Id: 3,
-        Nombre: "Listado Clientes", 
+        Nombre: "Servicios", //Nombre anterior: Listado Clientes
         Detalle: "Practica",     
-        Url: "/Practica_Listado_Clientes.html",
+        Url: "/Servicios.html",
         Activo: true  //se pone en true para clase del 05-02-2025
     },
     {   Id: 4,
@@ -43,7 +43,7 @@ export let Datos_LiNav = [
         Nombre: "API_TareaPokemon",    
         Detalle: "Proyecto", 
         Url: "/API_TareaPokemon.html",
-        Activo: false
+        Activo: true
     },
     {   Id: 8,
         Nombre: "API_Listado_Cliente",    
@@ -61,7 +61,7 @@ export let Datos_LiNav = [
         Nombre: "API_Contacto",    
         Detalle: "Proyecto", 
         Url: "/API_Contacto.html",
-        Activo: false
+        Activo: true
     },
     {   Id: 11,
         Nombre: "Practica IF",    
@@ -73,7 +73,7 @@ export let Datos_LiNav = [
         Nombre: "Practica CICLO",    
         Detalle: "Practica ", 
         Url: "/Practica_CICLO.html",
-        Activo: false //se pone en true para clase del 05-02-2025 y el 10-02-2025 se pone en false
+        Activo: true //se pone en true para clase del 05-02-2025 y el 10-02-2025 se pone en false
     },
 ];
 

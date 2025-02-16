@@ -21,12 +21,12 @@ function Mostrar_Footer() {
         = `
 
    
-   <div class="container">
-        <p class="h2 mb-2">
+   <div class="container border-radius-10">
+        <p class="h2 mb-2 text-center">
         LÍDERES EN CALIDAD DE CONSTRUCCIÓN E INFRAESTRUCTURA
            <img src="Assets/Datosempresa.png" class="w-100" alt="">  
         </p>
-        <p class="h4 lead">  Destacamos por la innovación, sostenibilidad y cumplimiento de los más altos estándares globales en
+        <p class="h4 lead text-center">  Destacamos por la innovación, sostenibilidad y cumplimiento de los más altos estándares globales en
                     diseño y ejecución de proyectos </p>
     </div>
             

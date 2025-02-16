@@ -11,33 +11,22 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
 function Mostrar_Navbar() {
 
-let Contenedo_IdNav = document.getElementById('IdNav');  //ls //gi
+let Contenedor_IdNav = document.getElementById('IdNav');  //ls //gi
 
-Contenedo_IdNav.innerHTML = 
+Contenedor_IdNav.innerHTML = 
 `
-  <a class="navbar-brand" href="#"><img src="/Assets/Logo empresa.png" class ="w-50" alt=""> </a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
-            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+  <a class="navbar-brand" href="/Inicio.html"><img src="/Assets/Logo empresa.png" class ="w-50" alt=""> </a>
+      
         <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="IdLiNav">
-            
-
-            
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="IdLiNav">            
             </ul>
-          
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
 `;
-
-   
 }
-
-
 
 function Mostrar_LiNav() {
     let Contenedor_IdLiNav = document.getElementById('IdLiNav');  //gi
@@ -47,7 +36,7 @@ function Mostrar_LiNav() {
     Datos_LiNav.filter(element => element.Activo).forEach(element => {
         html += `
         <li>
-            <a class="nav-link" href="${element.Url}">${element.Nombre}</a>
+            <a class="text-white m-3" href="${element.Url}">${element.Nombre}</a>
         </li>
         `;
     });
