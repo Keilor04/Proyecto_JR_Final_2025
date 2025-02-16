@@ -23,23 +23,22 @@ function Confirmardatos() {
     Fechanacimiento = document.getElementById("Fecha").value;
     Edad = document.getElementById("Edad").value;
     
-    resultado = `Los datos registrados son: <br>
-    Nombre: ${Nombre} <br>
-    Primer Apellido: ${PrimerApellido}<br> 
-    Segundo Apellido: ${SegundoApellido} <br>
-    Fecha de nacimiento: ${Fechanacimiento} <br>
+    resultado = `Los datos registrados son: 
+    Nombre: ${Nombre} 
+    Primer Apellido: ${PrimerApellido}  
+    Segundo Apellido: ${SegundoApellido} 
+    Fecha de nacimiento: ${Fechanacimiento} 
     Edad: ${Edad}`
     
-    console.log(`Registro confirmado: 
-Nombre: ${Nombre}
-Primer Apellido: ${PrimerApellido}
-Segundo Apellido: ${SegundoApellido}
-Fecha de nacimiento: ${Fechanacimiento}
-Edad: ${Edad}`);
+    console.log(`Los datos registrados son: 
+    Nombre: ${Nombre} 
+    Primer Apellido: ${PrimerApellido}  
+    Segundo Apellido: ${SegundoApellido} 
+    Fecha de nacimiento: ${Fechanacimiento} 
+    Edad: ${Edad}`);
 
-alert(resultado)
-
-document.getElementById("datos").innerHTML = resultado
+    alert(resultado);
+//document.getElementById("datos").innerHTML = resultado
 
 }
 
@@ -56,16 +55,18 @@ function Confirmardatos2() {
     Email = document.getElementById("Nombre").value;
     Contraseña = document.getElementById("Primer Apellido").value;
     
-    resultado2 = `Los datos registrados son: <br>
-    Email: ${Email} <br>
-    Contraseña: ${Contraseña}<br>`
+    resultado2 = `Los datos registrados son: 
+    Email: ${Email}
+    Contraseña: ${Contraseña}`
     
-    console.log(`Registro confirmado: 
+    console.log(`Los datos registrados son: 
 Email: ${Email}
 Contraseña: ${Contraseña}
 `);
 
-document.getElementById("datos2").innerHTML = resultado2
+alert(resultado2);
+
+//document.getElementById("datos2").innerHTML = resultado2
 
 }
 
