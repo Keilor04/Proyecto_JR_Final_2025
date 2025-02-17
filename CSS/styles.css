@@ -4,7 +4,7 @@
   --colorglobal:#dd2476;
   --TextClaro:#0c0c0c;
   --colorglobal2:#ffffff;
-
+  --colorglobal3:#eedf13;
 }
 
 body{
@@ -14,8 +14,11 @@ body{
 
 #IdNav {
    color: white;
-    background-color: rgb(15, 55, 73);
-    
+    background-color: rgb(15, 55, 73); 
+}
+
+.IdLiNav a:hover {
+    color:  var(--colorglobal3);
 }
 
 main{
@@ -37,7 +40,11 @@ footer{
 
 .iconos i{
     color:  var(--colorglobal2);
-   
+}
+
+
+.iconos i:hover {
+    color:  var(--colorglobal3);
 }
 
 .texto-cortado {

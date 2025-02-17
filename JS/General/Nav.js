@@ -21,7 +21,7 @@ Contenedor_IdNav.innerHTML =
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="IdLiNav">            
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
                 <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
