@@ -15,13 +15,13 @@ function Mostrar_Nosotros() {
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="./Assets/Img_nosotros.png" alt="First slide">
+      <img class="d-block w-100" src="Assets/Img_nosotros.png" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="./Assets/Img_nosotros03.png" alt="Second slide">
+      <img class="d-block w-100" src="Assets/Img_nosotros03.png" alt="Second slide">
     </div>
      <div class="carousel-item">
-      <img class="d-block w-100" src="./Assets/Registro.png" alt="Third slide">
+      <img class="d-block w-100" src="Assets/Registro.png" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -44,22 +44,22 @@ function Mostrar_Clientes() {
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 <div class="carousel-inner">
   <div class="carousel-item active">
-    <img class="d-block w-100" src="./Assets/Clientes.png" alt="First slide">
+    <img class="d-block w-100" src="Assets/Clientes.png" alt="First slide">
   </div>
   <div class="carousel-item">
-    <img class="d-block w-100" src="./Assets/Clientes02.png" alt="Second slide">
+    <img class="d-block w-100" src="Assets/Clientes02.png" alt="Second slide">
   </div>
   <div class="carousel-item">
-    <img class="d-block w-100" src="./Assets/Clientes03.png" alt="Third slide">
+    <img class="d-block w-100" src="Assets/Clientes03.png" alt="Third slide">
   </div>
    <div class="carousel-item">
-    <img class="d-block w-100" src="./Assets/Clientes04.png" alt="Fourth slide">
+    <img class="d-block w-100" src="Assets/Clientes04.png" alt="Fourth slide">
   </div>
   <div class="carousel-item">
-    <img class="d-block w-100" src="./Assets/Clientes05.png" alt="Five slide">
+    <img class="d-block w-100" src="Assets/Clientes05.png" alt="Five slide">
   </div>
    <div class="carousel-item">
-    <img class="d-block w-100" src="./Assets/Clientes06.png" alt="Six slide">
+    <img class="d-block w-100" src="Assets/Clientes06.png" alt="Six slide">
   </div>
 </div>
 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

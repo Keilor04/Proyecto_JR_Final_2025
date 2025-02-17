@@ -59,25 +59,25 @@ function Mostrar_Articulos() {
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner text-center content-center">
     <div class="carousel-item active">
-      <img class="w-25 img-thumbnail" src="/Assets/Img01_seccion02.png" alt="First slide">
+      <img class="w-25 img-thumbnail" src="Assets/Img01_seccion02.png" alt="First slide">
        <h3>Planeamiento</h3>
        <p>Planeación de cada una de las etapas sus proyectos de forma integral</p>
        <a href="Servicios.HTML">Más información<i class="fas fa-angle-double-right"></i></a>
     </div>
     <div class="carousel-item">
-      <img class="w-25 img-thumbnail" src="/Assets/Img02_seccion02.png" alt="Second slide">
+      <img class="w-25 img-thumbnail" src="Assets/Img02_seccion02.png" alt="Second slide">
       <h3>Arquitectura e Ingeniería</h3>
        <p>Profesionales comprometidos para cumplir sus proyectos en alcance, costo y plazo, todo acorde a sus expectativas</p>
        <a href="Servicios.HTML">Más información <i class="fas fa-angle-double-right"></i></a>
     </div>
     <div class="carousel-item">
-      <img class="w-25 img-thumbnail" src="/Assets/Img03_seccion02.png" alt="Third slide">
+      <img class="w-25 img-thumbnail" src="Assets/Img03_seccion02.png" alt="Third slide">
       <h3>Construcción</h3>
       <p>Desarrollo constructivo de sus proyectos tanto de infraestructura civil como vial bajo estándares de calidad internacional</p>
       <a href="Servicios.HTML">Más información <i class="fas fa-angle-double-right"></i></a>
     </div>
      <div class="carousel-item">
-      <img class="w-25 img-thumbnail" src="/Assets/Img04_seccion02.png" alt="Third slide">
+      <img class="w-25 img-thumbnail" src="Assets/Img04_seccion02.png" alt="Fourth slide">
        <h3>Inversiones inmobiliarias</h3>
        <p>Comprometidos con la gestión eficiente de sus recursos en proyectos de alta demanda en el mercado local e internacional</p>
        <a href="Servicios.HTML">Más información <i class="fas fa-angle-double-right"></i></a>
@@ -106,12 +106,12 @@ function Mostrar_Proyectos() {
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 <div class="carousel-inner text-center content-center">
   <div class="carousel-item active">
-    <img class="w-50" src="/Assets/Img_residencial.png" alt="First slide">
+    <img class="w-50" src="Assets/Img_residencial.png" alt="First slide">
      <h3>Proyecto residencial Sunset Village</h3>
      <a href="Proyectos.html">Más información<i class="fas fa-angle-double-right"></i></a>
   </div>
   <div class="carousel-item">
-    <img class="w-50" src="/Assets/Img_condominio.png" alt="Second slide">
+    <img class="w-50" src="Assets/Img_condominio.png" alt="Second slide">
     <h3>Condominio horizontal vertical Los Maderos</h3>
      <a href="Proyectos.html">Más información <i class="fas fa-angle-double-right"></i></a>
   </div>
