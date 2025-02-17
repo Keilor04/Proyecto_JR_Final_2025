@@ -19,7 +19,7 @@ function Mostrar_Footer() {
                <!-- Fin: Contenedor 1 -->
                 <div class="col-md-6 col-sm-6 text-center align-content-center">
                           <h3  class="text-muted">Socios comerciales</h3>
-                          <img src="/Assets/Img02_footer.png" alt="" class = "w-75">
+                          <img src="Assets/Img02_footer.png" alt="" class = "w-75">
                 </div>
                 <!-- Fin: footer-mensaje -->
 
@@ -32,7 +32,7 @@ function Mostrar_Footer() {
                  <!-- Inicio: Contenedor 1 12 columnas  -->
                  <div class="col-md-12 col-sm-12">
                  <h3 class="text-muted text-center">Derechos de Autor</h3> 
-                 <br><a href="./Inicio.html"><img src="/Assets/Logo empresa.png" alt=""></a>
+                 <br><a href="./Inicio.html"><img src="Assets/Logo empresa.png" alt=""></a>
             </div>
             </div>
                 </div>
