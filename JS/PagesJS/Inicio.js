@@ -22,7 +22,7 @@ function Mostrar_Nosotros() {
                 <div class="row">
                     <!-- Inicio: Contenedor 1  -->
                     <div class="col-md-12 col-sm-12 ">
-                        <img src="Assets/img_cabecera_01.png" class="w-100 center mt-3 mb-3" alt="">
+                        <img src="Assets/Img_cabecera_01.png" class="w-100 center mt-3 mb-3" alt="">
                     </div>
                     <!-- Fin: Contenedor 1 -->
 
