@@ -64,6 +64,16 @@ footer{
     background-color: rgb(5, 51, 59);
     color: white;
     border-radius: 10px;
+    padding: 10px;
+    max-height: fit-content;
+}
+
+#Clientes {
+    background-color: rgb(5, 51, 59);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    max-height: fit-content;
 }
 
 #Proyectos {
